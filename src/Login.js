@@ -1,5 +1,5 @@
-import CustomInput from "./SystemDesign/CustomInput";
-import FormButton from "./SystemDesign/Button";
+import CustomInput from "../SystemDesign/CustomInput";
+import FormButton from "../SystemDesign/Button";
 import { AiOutlineMail, AiOutlineUser, AiFillLock } from "react-icons/ai";
 
 function App() {
