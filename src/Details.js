@@ -1,10 +1,10 @@
 import "./App.scss";
 import React from "react";
- import Card from'../SystemDesign/Card';
+ import Card from'./SystemDesign/Card';
 // import SimpleSlider from './caraousel';
-import CustomInput from "../SystemDesign/CustomInput";
-import FormButton from "../SystemDesign/Button";
-import Banner from "../SystemDesign/Banner";
+import CustomInput from "./SystemDesign/CustomInput";
+import FormButton from "./SystemDesign/Button";
+import Banner from "./SystemDesign/Banner";
 import { useState } from 'react';
 import { AiOutlineMail, AiOutlineUser, AiFillLock } from "react-icons/ai";
 
