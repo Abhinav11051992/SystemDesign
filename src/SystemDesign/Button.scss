@@ -1,0 +1,21 @@
+@mixin button-text {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form_btn {
+  background-color: var(--sec_color);
+  flex-grow: 1;
+  padding: 1.2rem 2rem;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+
+  button {
+    @include button-text;
+  }
+}
