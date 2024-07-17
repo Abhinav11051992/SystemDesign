@@ -10,10 +10,13 @@ import { AiOutlineMail, AiOutlineUser, AiFillLock } from "react-icons/ai";
 
 function App() {
   const [name, setName] = useState("");
+  const [designation, setDesignation] = useState("");
+  const [pass, setpass]= useState("");
+  const [submit, setSubmit] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`The name you entered was: ${name}`)
+    setSubmit(!submit)
   }
 
   return (
@@ -22,6 +25,10 @@ function App() {
       <main>
       <Card Name={"Abhinav"} Designation={"Senior Consultant"} imgPath ={"https://picsum.photos/50/50"}/>
       <Card Name={"Karthik"} Designation={"Consultant"} imgPath ={"https://picsum.photos/51/50"}/>
+
+     
+      {(name && designation && pass === "1234" && submit ) && <Card Name={name} Designation={designation} imgPath ={"https://picsum.photos/50/51"}/>}
+    
         
       </main>
       <form onSubmit={handleSubmit}>
@@ -34,12 +41,14 @@ function App() {
           <CustomInput
             icon={<AiOutlineMail />}
             type={"text"}
-            placeholder={"Enter your Email"}
+            placeholder={"Enter your Designation"}
+            onChange={(e) => setDesignation(e.target.value)}
           />
           <CustomInput
             icon={<AiFillLock />}
             type={"password"}
-            placeholder={"Enter your Password"}
+            placeholder={"PassKey to Display the details as Card"}
+            onChange={(e) => setpass(e.target.value)}
           />
           <FormButton btnText={'Submit'} style={{backgroundColor:"#4d6493"}}/>
         </form>
