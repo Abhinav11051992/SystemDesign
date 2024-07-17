@@ -1,0 +1,43 @@
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+    background-color:#333;
+    color: #fff;
+    padding:20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+
+  ul {
+    display: flex;
+    text-decoration: none;
+    gap: 25px;
+    li {
+        list-style-type: none;
+        
+        a:link {
+            text-decoration: none;
+        }
+        
+        a:hover{
+            border-top: 2px solid white;
+            font-size: 15px;
+        }
+    } 
+
+}
+}
+
+
+
+
